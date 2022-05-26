@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+
+        margin: 0 auto;
+      }
+
+      .box1:hover {
+        /* deg为角度问题，正数为顺时针，负数逆时针 */
+        /* 旋转 */
+        transform: rotate(45deg);
+      }
+
+      .box2:hover {
+        background-color: antiquewhite;
+        /* 
+            缩放倍数，一个参数时，表示水平和垂直同时缩放该倍数 
+            两个参数时：第一个参数指定为水平方向的缩放倍率，第二个参数指定垂直方向的缩放倍率
+            */
+        transform: scale(0.5);
+      }
+
+      .box3:hover {
+        /* 
+            一个参数时：表示水平得到倾斜角度
+            两个参数时：第一参数表示水平方向，第二个参数表示垂直方向的倾斜角度
+             */
+        /* transform: translate(45px); */
+        transform: skew(45px, 150px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        translate() 移动
+        rotate() 旋转
+        scale()  缩放
+        skew() 倾斜
+        matrix() 
+     -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>

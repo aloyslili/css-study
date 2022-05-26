@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 ul {
+        list-style: none;
+        width: 500px;
+        display: flex;
+      }
+
+      .box1 {
+        display: flex;
+      }
+      .box1 ul li {
+        padding-left: 20px;
+        width: 200px;
+        justify-content: space-around;
+        height: 200px;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .box2 {
+        margin-top: -30px;
+        margin-left: 10px;
+        color: white;
+        /* 设置透明度为0  整体的透明度都没了*/
+        opacity: 0;
+         /* 用过的的效果实现透明度的变化 */
+         transition: opacity 2s linear 0s;
+      }
+
+     
+       li:hover .box2  {
+          opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <ul>
+        <li>
+          <img src="/images/01.webp" alt="" />
+          <div class="box2">海南风光</div>
+        </li>
+        <li>
+          <img src="/images/01.webp" alt="" />
+          <div class="box2">海南风光</div>
+        </li>
+        <li>
+          <img src="/images/01.webp" alt="" />
+          <div class="box2">海南风光</div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

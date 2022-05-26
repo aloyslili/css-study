@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box3 {
+        position: absolute;
+        width: 340px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: bh 1s ease 0s infinite alternate;
+      }
+
+      .box1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .box1 img {
+        width: 200px;
+        height: 200px;
+      }
+
+      @keyframes bh {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      .box2 {
+        position: absolute;
+        left: 200px;
+        top: 200px;
+      }
+
+      .line1 {
+        border: 0.1px solid rgb(29, 6, 159);
+        position: absolute;
+        top: 200px;
+        left: 500px;
+        width: 100px;
+        transform: rotate(-45deg) translateX(-200px);
+        animation: hd 1s linear 0.2s infinite;
+        opacity: 0;
+      }
+
+      .line2 {
+        border: 0.1px solid rgb(29, 6, 159);
+        position: absolute;
+        top: 300px;
+        left: 400px;
+        width: 100px;
+        transform: rotate(-45deg);
+        animation: hd 1s linear 0.7s infinite;
+        opacity: 0;
+      }
+
+      .line3 {
+        border: 0.1px solid rgb(29, 6, 159);
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        width: 100px;
+        transform: rotate(45deg) translateX(-200px);
+        animation: hd 1s linear 1.2s infinite;
+        opacity: 0;
+      }
+
+      @keyframes hd {
+        /* 起始位置的时候 */
+        0% {
+          transform: rotate(-45deg) translateX(-200px);
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(-45deg) translateX(100px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"><img src="../images/dengpao.png" alt="" /></div>
+    <div class="box3"><img src="../images/guang.png" alt="" /></div>
+
+    <div class="box2"><img src="../images/huojian.png" alt="" /></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/animejs/3.2.1/anime.js"></script> -->
+    <script>
+    //   anime({ targets: ".line1", loop: true, translateX: 100, rotate: "-45deg", opacity: 1 });
+    </script>
+  </body>
+</html>

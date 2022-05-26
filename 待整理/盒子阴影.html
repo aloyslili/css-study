@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            /*
+                盒子阴影和文字阴影一样
+                第一个参数1px是阴影的水平方向
+                第二个参数1px是阴影的垂直方向
+                第三个参数是边框阴影的模糊度
+                第四个参数是模糊度可延申
+                box-shadow: 0px 0px 2px red;
+             */
+            /* box-shadow: 0px 0px 2px 20px red; */
+
+            /*
+                内置阴影 
+                也可以添加颜色
+                可以加模糊度
+             */
+            box-shadow: 10px 10px rgb(71, 133, 191) inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .box1:hover {
+            /* 一个参数时，就水平方向移动，
+            负值时往左方向平移
+                
+            两个参数时*，水平方向和垂直方向都移动*/
+            transform: translate(100px);
+        }
+
+        .box2 {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .box2:hover {
+             /* 向下滑动 */
+             transform: translate(0, -10px);
+             box-shadow: (0 0 5 5 #f4f4f4);
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            margin-top: 300px;
+        }
+        .box3:hover {
+            /* 1表示没有变化 */
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        通常包含的属性包含了属性名和属性值，包括
+        translat()
+        scale()
+        rotate()
+        skew()
+        transform：函数名（x轴，y轴）
+        transform函数：
+            transform：根据在x轴和顶部y轴位置给定的参数，从
+            当前元素位置移动
+            translate：转换，沿着x轴和y轴移动
+            rotate：元素顺时针旋转给定的角度，允许负值，元素逆时针
+            旋转
+            scale: 缩放
+            kew: 倾斜
+
+     -->
+     <div class="box1"></div>
+     <div class="box2"></div>
+     <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+
+        }
+        .box img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box img:last-child {
+            /* 从哪里开始翻转 */
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: 0 0;
+            /* 实现动画效果 */
+            transition: transform 3s linear 0s;
+        }
+
+        .box:hover img:last-child {
+            /* 180度翻转 */
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="/images/01.webp" alt="">
+        <img src="/images/01.webp" alt="">
+    </div>
+</body>
+</html>

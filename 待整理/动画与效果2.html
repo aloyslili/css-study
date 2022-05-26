@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        transform-origin属性永固设置旋转位置元素的基点(翻转）
+        有三个参数x轴 y轴 z轴
+     -->
+     
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+         }
+         .box img {
+            margin-left: 400px;
+             width: 200px;
+             width: 200px;
+             border-radius: 50%;
+         }
+         .box img:nth-child(2) {
+             position: absolute;
+             left: 0;
+             transform-origin: 0 0;
+             transition: transform 1s ease 0s;
+         }
+         .box:hover img.dog{
+            transform: rotateY(180deg);
+         }
+         /* 
+            三D效果
+         */
+     </style>
+</head>
+<body>
+    <div class="box">
+        <img  src="../images/dog.jpg" alt="">
+        <img class="dog" src="../images/cat.jpg" alt="">
+    </div>
+</body>
+</html>
